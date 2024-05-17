@@ -1,0 +1,166 @@
+
+
+        <div id="div_search" onchange="buscar()">
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Buscar producto" aria-describedby="basic-addon1" id="search_value">
+              </div>
+              
+        </div>   
+        
+
+
+    <!-------------form de prueba------------------------->
+    <div id="compra_main_div">
+        <ul class="list-group" id="ul_main_space">
+            <li class="list-group-item" hidden>
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+
+                    <div class="accordion-item">
+
+
+                        <div class="accordion-header m-2">
+
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                <div class="compra_main_main_container">
+                                    <div class="compra_main_left_container">
+                                        <span>nombre</span>
+                                        <br>
+                                        <label for="compra_main_left_cantidad">Cantidad Disponible: </label>
+                                        <span name="compra_main_left_cantidad">xxxx</span>
+                                        <br>
+                                        <label for="compra_main_left_precio">Precio: </label>
+                                        <span name="compra_main_left_precio">xxxx</span>
+                                    </div>
+
+                                    <div class="compra_main_right_container">
+                                        <img src="imgs/cheems.png" alt="not found" class="img_acordion rounded">
+                                    </div>
+                                </div>
+                                
+                                
+                            </button>
+                        </div>
+
+
+                        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+
+                            <div class="accordion-body">
+
+                                <div class="compra_sub_main_container">
+                                    <div class="compra_sub_left_container">
+
+                                        <!---precio-->
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text">$</span>
+                                            <input type="text" class="form-control" placeholder="Precio">
+                                        </div>
+
+                                        <!---cantidad-->
+                                        <div class="input-group mb-3">
+                                            <input type="text" class="form-control" placeholder="Cantidad">
+                                        </div>
+
+                                        <!---comision-->
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-text">
+                                                <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
+                                            </div>
+                                                <span class="input-group-text">Comision</span>
+                                                <input type="text" class="form-control" placeholder="valor">
+                                        </div>
+
+                                        <!-----medio de entrega-->
+                                        <div class="input-group mb-3">
+                                            <button class="btn btn-light" type="button" data-bs-toggle="dropdown" aria-expanded="false">Medio de Entrega</button>
+                                            <ul class="dropdown-menu">
+                                              <li><a class="dropdown-item" href="#">Action</a></li>
+                                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                              <li><hr class="dropdown-divider"></li>
+                                              <li><a class="dropdown-item" href="#">Separated link</a></li>
+                                            </ul>
+                                            <input type="text" class="form-control" aria-label="Text input with dropdown button" disabled>
+                                          </div>
+
+                                          <!-----medio de pago-->
+                                          <div class="input-group mb-3">
+                                            
+                                            <button class="btn btn-light" type="button" data-bs-toggle="dropdown" aria-expanded="false">Medio de Pago</button>
+                                            <ul class="dropdown-menu">
+                                              <li><a class="dropdown-item" href="#">Action</a></li>
+                                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                              <li><hr class="dropdown-divider"></li>
+                                              <li><a class="dropdown-item" href="#">Separated link</a></li>
+                                            </ul>
+                                            <input type="text" class="form-control" aria-label="Text input with dropdown button" disabled>
+                                            <div class="input-group-text">
+                                                <input class="form-check-input mt-0" type="checkbox" value="" aria-label="Checkbox for following text input">
+                                            </div>
+                                            <span class="input-group-text">Pago Inmediato</span>
+                                          </div>
+
+                                          <!---date-->
+                                          <div class="mb-3">
+                                            <input type='date' name='fecha' class="form-control compra_form_datepicker">
+                                        </div>
+
+                                    </div>
+                                    <div  class="compra_sub_right_container">
+                                        <div class="m-3">
+                                            <label class="attr_right_leftsided">Cantidad: </label>
+                                            <span class="attr_right_rightsided result_form">xxxxx</span>
+                                            <br>
+
+                                            <label class="attr_right_leftsided">Precio por unidad: </label>
+                                            <span class="attr_right_rightsided">xxxxx</span>
+                                            <br>
+
+                                            <label class="attr_right_leftsided">Envio: </label>
+                                            <span class="attr_right_rightsided">xxxxx</span>
+                                            <br>
+
+                                            <hr>
+                                            <label class="attr_right_leftsided">SubTotal:</label>
+                                            <span class="attr_right_rightsided">xxxxx</span>
+                                            <br>
+                                            <label class="attr_right_leftsided">comision:</label>
+                                            <span class="attr_right_rightsided">xxxxx</span>
+                                            <br>
+                                            <hr>
+                                            <label class="attr_right_leftsided">Valor a cobrar:</label>
+                                            <span class="attr_right_rightsided">xxxxx</span>
+                                            <br>
+                                            <label class="attr_right_leftsided">Total:</label>
+                                            <span class="attr_right_rightsided">xxxxx</span>
+                                            <br>
+                                            <button type="button" class="btn btn-success">Confirmar</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                
+
+                </div>
+            </li>
+
+            
+        </ul>   
+    </div>
+
+
+
+
+
+<!--------links y scripts-->
+
+<link rel="stylesheet" href="styles/venta_styles.css">
+<script type="text/javascript" src="scripts/js section/venta_functions.js"></script>
+<script type="text/javascript" src="scripts/get_date.js"></script>
+
+<!-----recordar instanciar la clase get_date-js-->

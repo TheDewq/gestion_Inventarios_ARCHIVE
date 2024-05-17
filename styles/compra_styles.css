@@ -1,0 +1,73 @@
+#Compra_main_container{
+    margin: 1%;
+}
+#Compra_main_container div{
+    margin-bottom: 1%;
+}
+#compra_left_container{
+    flex: 50%;
+    transition: all 1s;
+    margin: 0 !important;
+}
+#compra_right_container{
+    flex: 50%;
+    transition: all 1s;
+    margin: 0 !important;
+    padding: 1%;
+}
+#compra_main_container_2{
+    display: flex;
+    width: 100%;
+    margin: 0 !important;
+}
+#compra_left_container:hover{
+    flex: 90%;
+    box-shadow: 10px 0px 15px 0px silver;
+}
+#compra_right_container:hover{
+    flex: 90%;
+    box-shadow: -10px 0px 15px 0px silver;
+}
+.compra_container_2{
+    padding: 0 !important;
+}
+
+#compra_main_container_3{
+    display: flex;
+    width: 100%;
+    margin: 0 !important;
+}
+
+#compra_left_container_3{
+    flex: 50%;
+    transition: all 1s;
+    margin: 0 !important;
+}
+#compra_right_container_3{
+    flex: 50%;
+    transition: all 1s;
+    margin: 0 !important;
+    text-align: center;
+    padding: 1%;
+}
+#compra_left_container_3:hover{
+    flex: 90%;
+    box-shadow: 10px 0px 15px 0px silver;
+}
+#compra_right_container_3:hover{
+    flex: 90%;
+    box-shadow: -10px 0px 15px 0px silver;
+}
+#compra_form3_main_container{
+    display: flex;
+    margin: 0 !important;
+}
+
+.compra_container_3{
+    padding: 0 !important;
+}
+
+.img_form_2{
+    width: 33%;
+}
+

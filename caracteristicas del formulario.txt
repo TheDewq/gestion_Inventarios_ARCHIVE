@@ -1,0 +1,36 @@
+caracteristicas del formulario:
+
+precio
+cantidad
+checkbox de comision
+valor comision
+medio de entrega
+medio de pago
+pago inmediato
+fecha
+
+caracteristicas del output:
+
+Cantidad:
+Precio por unidad:
+Envio:result
+SubTotal:
+Comision:
+Valor a cobrar:
+Total:
+
+
+valores de base de datos
+
+id	
+producto -		
+cantidad	-
+precio_unidad -	
+comision	-
+comisionado	
+valor_cobrado	
+valor_final	
+medio_entrega	
+medio_pago	
+pagado	
+fecha

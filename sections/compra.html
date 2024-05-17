@@ -1,0 +1,143 @@
+    <div id="Compra_main_container">
+        <div>
+            <p>
+                <button onmouseover="GetTime()" class="btn btn-outline-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapseExample">
+                        Compra nueva
+                </button>
+            </p>
+                <div class="collapse" id="collapse1">
+                    <div class="card card-body">
+                    <form enctype="multipart/form-data">
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Nombre</label> <!--nombre-->
+                            <input type="text" class="form-control compra_form_1">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Color</label>    <!--color-->
+                            <input type="text" class="form-control compra_form_1">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Cantidad</label>     <!--cantidad-->
+                            <input type="text" class="form-control compra_form_1">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Costo</label>    <!--costo-->
+                            <input type="text" class="form-control compra_form_1">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Precio</label> <!--precio-->
+                            <input type="text" class="form-control compra_form_1">
+                        </div>
+                        <div class="mb-3">
+                            <input type='date' name='fecha' class="form-control compra_form_datepicker compra_form_1"> <!--fecha-->
+                        </div>
+                        <div class="mb-3">
+                            <input type='file' class="form-control compra_form_1" id="inputGroupFile01" name='foto'> <!--foto-->
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Descripcion</label> <!--descripcion-->
+                            <textarea class="form-control compra_form_1" id="floatingTextarea2" style="height: 100px"></textarea>
+                        </div>
+                        <button type="button" class="form-control" onclick="upload_form1()">Submit</button>
+                        </form>
+                    </div>
+                </div>
+        </div>
+        <div>
+            <p>
+                <button onclick="get_compra_antigua()" onmouseover="GetTime()" class="btn btn-outline-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapseExample">
+                        Compra Antigua
+                </button>
+            </p>
+            <div class="collapse" id="collapse2">
+                    <div class="card card-body compra_container_2">
+                        <div id="compra_main_container_2">
+                            <div id="compra_left_container">
+                                <div class="container" hidden>
+                                    <h3>titulo</h3>
+                                    <img src="imgs/cheems.png" alt="">
+                                    <input type="radio" name="product" value="x">
+                                </div>
+                            </div>
+                            <div id="compra_right_container">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="compra_form2_cantidad" class="form-label">Cantidad</label>
+                                        <input type="text" class="form-control" name="compra_form2_cantidad" aria-describedby="emailHelp">
+                                    </div>
+
+                                    <div class="mb-3">
+                                    <label for="compra_form2_costo_fake" class="form-label">Costo</label>
+                                        <div class="input-group mb-3" name="compra_form2_costo_fake">
+                                            <span class="input-group-text">$</span>
+                                            <input type="text" class="form-control" placeholder="C/U">
+                                        </div>
+                                        <div class="input-group mb-3" name="compra_form2_costo_fake">
+                                            <span class="input-group-text">=</span>
+                                            <input type="text" class="form-control" placeholder="Cantidad">
+                                            <span class="input-group-text">/</span>
+                                            <input type="text" class="form-control" placeholder="Total">
+                                        </div>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="compra_form2_precio" class="form-label">Precio</label>
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text">$</span>
+                                            <input type="text" class="form-control" name="compra_form2_cantidad" aria-describedby="emailHelp">
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                         <input type='date' name='fecha' class="form-control compra_form_datepicker">
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <button type="button" class="btn btn-success">Success</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        
+                    </div>
+            </div>
+        </div>
+        <div>
+            <p>
+                <button  onmouseover="GetTime()" class="btn btn-outline-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapseExample">
+                        Registrar llegada
+                </button>
+            </p>
+                <div class="collapse" id="collapse3" >
+                    <div class="card card-body compra_container_3">
+                        <div id="compra_form3_main_container">
+                            <div id="compra_left_container_3">
+                                <br><br><br><br>
+                            </div>
+                            <div id="compra_right_container_3">
+                                <form>
+                                    <button type="button" class="btn btn-success">Confirmar</button>
+                                </form>
+                            </div>
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div>
+
+    </div>
+
+
+
+
+
+    <!---scripts---------------------------------------------------------------------------------------------------------->
+
+    <script type="text/javascript" src="scripts/get_date.js"></script>
+    <script type="text/javascript" src="scripts/js section/compra_functions.js"></script>
+
+
+

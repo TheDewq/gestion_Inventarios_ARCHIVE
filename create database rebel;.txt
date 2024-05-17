@@ -1,0 +1,64 @@
+create database rebel;
+
+use rebel;
+
+create table producto(
+	id int not null auto_increment,
+    nombre varchar(16) not null,
+    color varchar(16) not null,
+    cantidad int not null,
+    costo int not null,
+    precio int not null,
+    descripcion text(1000),
+    primary key(id)
+);
+
+create table compra(
+	id int not null auto_increment,
+    producto int not null,
+    cantidad int not null,
+    costo_unidad int not null,
+    arrived boolean default 0,
+    fecha date,
+    primary key (id),
+    constraint producto foreign key (producto) references producto(id)
+);
+create table comisiones(
+	id int not null auto_increment,
+    nombre varchar(64),
+    primary key(id)
+);
+
+create table medios_entrega(
+	id int not null auto_increment,
+    nombre varchar(64) not null,
+    primary key(id)
+);
+create table venta(
+	id int not null auto_increment,
+    producto int not null,
+    cantidad int not null,
+    precio_unidad int not null,
+    comision int not null,
+    comisionado int not null,
+    medio_entrega int not null,
+    pagado boolean default 0,
+    fecha date,
+    primary key(id),
+    foreign key(producto) references producto(id),
+    foreign key(comisionado) references comisiones(id),
+    foreign key(medio_entrega) references medios_entrega(id)
+);
+
+create table devolucion(
+	id int not null auto_increment,
+    venta int not null,
+    perdida int null,
+    medio_entrega int not null,
+    arrived boolean default 0,
+    primary key (id),
+    foreign key(venta) references venta(id),
+	foreign key(medio_entrega) references medios_entrega(id)
+);	
+
+alter table producto add foto varchar(64) not null;

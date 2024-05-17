@@ -1,0 +1,102 @@
+ <!--aqui se pone el contenido del offcanvas---------------------------------------------------------------------------------------------------->
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title offcanvas_form" id="offcanvasExampleLabel">cheems</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div>
+      <img src="" alt="not found" class="inventario_img_seleccion rounded offcanvas_form">
+    </div>
+    <form>
+    <div class="mb-3">
+        <label for="inventario_valores_modificables_precio" class="form-label">color</label>
+        <input class="form-control offcanvas_form" id="inventario_valores_modificables_precio">
+    </div>
+    <div class="mb-3">
+        <label for="inventario_valores_modificables_cantidad" class="form-label">Cantidad</label>
+        <input class="form-control offcanvas_form" id="inventario_valores_modificables_cantidad">
+    </div>
+    <div class="mb-3">
+        <label for="inventario_valores_modificables_color" class="form-label">Costo</label>
+        <input class="form-control offcanvas_form" id="inventario_valores_modificables_color">
+    </div>
+    <div class="mb-3">
+        <label for="inventario_valores_modificables_ventas" class="form-label">Precio</label>
+        <input class="form-control offcanvas_form" id="inventario_valores_modificables_ventas">
+    </div>
+    <div class="mb-3">
+      <label for="floatingTextarea">Descripcion</label>
+      <textarea class="form-control offcanvas_form" placeholder="Descripcion" id="floatingTextarea"></textarea>
+    </div>
+</form>
+    <div class="btn-group" role="group" aria-label="Basic example">
+        <button type="button" class="btn btn-primary offcanvas_form" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          Modificar
+        </button>
+        <button type="button" class="btn btn-primary">
+          Borrar
+        </button>
+    </div>
+  </div>
+</div>
+<!------------donde se va dibujar el contenido a partir de las funciones------------------------------------------------------------------------------------------------------------->
+<div id="main_box">
+
+</div>
+<div class="m-4 p-2 shadow rounded inventarios_lista_caja" hidden>
+    <div class="row">
+        <div class="col-3">
+            <img src="imgs/cheems.png" alt="not found" class="rounded inventario_img_seleccion" class="text-center">
+            <div class="container mt-2">
+                <button class="btn btn-primary mb-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                  Modificar
+                </button>
+            </div>
+        </div>
+        <div class="col-7">
+           <h5>cheems</h6>
+           <h6>Descripcion</h6>
+           <ul>
+                <li>precio del cheems</li>
+                <li>costo del cheems</li>
+                <li>color del cheems</li>
+           </ul>
+        </div>
+    </div>   
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modificar producto</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <span class="box_confirmation">Desea modificar los siguentes atributos de </span><span class="box_confirmation"></span>
+        <span class="box_confirmation"></span>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-primary box_confirmation" onclick="upload_params()">Save changes</button>
+
+        
+      </div>
+    </div>
+  </div>
+</div>
+<!-------(0) mensaje principal,   (1) nombre de producto,   (2) atributos de producto,    (3) boton de confimacion-->
+<!------links and scripts--------------------------------->
+
+<link rel="stylesheet" href="styles/inventario_styles.css">
+<script type="text/javascript" src="scripts/js section/inventarios.js">
+  draw_new_item();
+</script>
+
+<!---php section: aqui estan todo el volcado de datos a arreglos de js para su posterior modificacion--->
+
+
+

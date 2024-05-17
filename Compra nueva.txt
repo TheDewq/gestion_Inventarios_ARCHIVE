@@ -1,0 +1,11 @@
+Compra nueva:
+
+nombre
+color
+cantidad
+costo
+precio
+fecha
+foto
+
+compra Antigua

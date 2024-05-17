@@ -1,0 +1,38 @@
+.img_acordion{
+    width: 25%;
+}
+.compra_main_main_container{
+    display: flex;
+}
+.compra_main_left_container{
+    flex: 30%;
+}
+.compra_main_right_container{
+    flex: 40%;
+}
+.compra_sub_main_container{
+    display: flex;
+}
+.compra_sub_left_container{
+    flex: 50%;
+}
+.compra_sub_right_container{
+    flex: 50%;
+}
+.attr_right_rightsided{
+    float: right;
+    font-size: larger;
+}
+.attr_right_leftsided{
+    font-size: larger;
+}
+#div_search{
+    margin: 1%;
+}
+#compra_main_div{
+    margin: 1% !important;
+}
+#ul_main_space{
+    list-style: none;
+}
+
